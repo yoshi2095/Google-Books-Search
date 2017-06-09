@@ -6,11 +6,17 @@ Search results are shown in an intuitive UI after calling the API endpoint.
 
 The API from which the data has been fetched is:
 
+<br>
+
  https://www.googleapis.com/books/v1/volumes?q=
+ 
+ <br>
  
  API with an example query is :
  
  e.g : https://www.googleapis.com/books/v1/volumes?q=harry
+ 
+ <br>
  
  ## Description:
 
