@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="col-md-12">
+		<form class="form-group">
+			<input type="text" class="form-control" placeholder="search for a book.." [(ngModel)]="query" (keyup.enter)="search()" name="search">
+		</form>
+	</div>
+</div>
+
+<div *ngIf="booksData">
+	
+	<div class="panel panel-default" *ngFor="let bookData of booksData">
+
+		    <div class="panel-heading">
+		    	<h3 class="panel-title"><strong>{{bookData.volumeInfo.title}}</strong></h3>
+		  	</div>
+
+		  	<div class="panel-body">
+		    	<div class="row">
+		    		<div class="col-md-4">
+		    			<img class="img-thumbnail github-avatar" src="{{bookData.volumeInfo.imageLinks.thumbnail}}">
+		    		</div>
+		    		<div class="col-md-8">
+		    			<div class="stats">
+		    				<span class="label label-default"> Pages: {{bookData.volumeInfo.pageCount}}</span>
+		    				<span class="label label-default">Published On: {{bookData.volumeInfo.publishedDate}}</span>
+		    			</div>
+		    			<br>
+		    			<ul class="list-group">
+		    				<li class="list-group-item"><strong>Publisher: </strong>{{bookData.volumeInfo.publisher}}</li>
+		    				<li class="list-group-item"><strong>Description: </strong>{{bookData.volumeInfo.description}}</li>
+		    				<li class="list-group-item"><strong>Average Rating: </strong>{{bookData.volumeInfo.averageRating}}</li>
+		    				<li class="list-group-item"><strong>Maturity Rating: </strong>{{bookData.volumeInfo.maturityRating}}</li>	
+		    			</ul> 
+		    		</div>
+		    	</div>
+		  	</div>
+	</div>
+		
+</div>
