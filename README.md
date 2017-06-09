@@ -24,9 +24,15 @@ The API from which the data has been fetched is:
 
 ![Search Text Box](https://github.com/yoshi2095/Google-Books-Search/blob/master/src/images/Screenshot-18.png)
 
+<br>
+<br>
+
 ##### And the corresponding results (at most 10) are displayed. Few metadata of these books like thumbnail, name, publisher, publishing date, description, etc. is also displayed:
 
 ![Results](https://github.com/yoshi2095/Google-Books-Search/blob/master/src/images/Screenshot-Google%20Books%20Search%20-%20Google%20Chrome.png)
+
+<br>
+<br>
 
 
 ## To see it in action:
